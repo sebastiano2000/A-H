@@ -1,0 +1,185 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	overflow: hidden;
+	background-color: #fff;
+	background-size: cover;
+}
+
+nav {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	align-items: center;
+	height: 100px;
+	background-color: #01011b;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+	margin-left: 8vw;
+}
+
+nav ul li a {
+	text-decoration: none;
+	font-size: 200%;
+	font-weight: 500;
+	color: #fff;
+	transition: all 0.5s;
+	padding-left: 2vw;
+	padding-right: 2vw;
+}
+
+nav ul li a:hover{
+	border-radius: 100px;
+	font-weight: 500;
+	opacity: 0.6s;
+	background: #fff;
+	color: black;
+	font-size: 210%;
+	padding-left: 1.89vw;
+	padding-right: 1.89vw;
+	transition: 0.5s;
+}
+
+nav button, .second button{
+	padding: 8px 15px;
+	border: none;
+	outline: none;
+	border-radius: 100px;
+	box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.3);
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+.loginIn {
+	background-color: rgb(255, 55, 54);
+}
+
+.loginIn:hover {
+	margin: 0px 5px;
+	padding: 10px;
+	opacity: 0.9;
+}
+
+.signUp {
+	background-color: rgb(255, 255, 255);
+}
+
+.signUp:hover {
+	margin: 0px 5px;
+	padding: 10px;
+	opacity: 0.9;
+}
+
+.data p{
+	margin-top: 16vw;
+	color: #01011b;
+	align-content: space-between;
+	font-size: 60px;
+	font-weight: bold;
+	font-family: inherit;
+}
+
+.data p a:link{
+	margin-left: 150px;
+	color: #01011b;
+}
+
+.data p .special {
+	color: #002b65;
+}
+
+.data p .special a:link{
+	margin-left: 20px;
+	color: #002b65;
+}
+
+::-webkit-scrollbar {
+	width: 15px;
+}
+
+::-webkit-scrollbar-track {
+	background: #ddd;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgb(1,1,27);
+}
+.data{
+	text-align:center;
+	font-size:30px;
+	font-family:Helvetica;
+}
+
+#footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #01011b;
+	padding: 10px;
+	text-align: center;
+	color: white;
+}
+
+@media screen and (max-width: 1000px) {
+	.leftcolumn, .rightcolumn {
+		width: 100%;
+		padding: 0;
+	}
+	.data p{
+		font-size: 30px;
+		margin-top: 25vw;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.leftcolumn, .rightcolumn {
+		width: 100%;
+		padding: 0;
+	}
+	nav ul li a {
+		font-size: 180%;
+		padding-left: 2vw;
+		padding-right: 2vw;
+		transition: all 0.5s;
+	}
+	nav ul {
+		margin-left: 2vw;
+	}
+	nav ul li a:hover{
+		font-size: 190%;
+		font-weight: 500;
+		padding-left: 1.7vw;
+		padding-right: 1.7vw;
+		transition: 0.5s;
+	}
+	.data p{
+		position: absolute;
+		top: 20%;
+		left: 20%;
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.data p{
+		position: absolute;
+		top: 30%;
+		left: 10%;
+		font-size: 30px;
+	}
+}

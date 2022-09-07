@@ -1,0 +1,266 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	overflow: hidden;
+	background-color: #fff;
+	background-size: cover;
+}
+
+nav {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	align-items: center;
+	height: 100px;
+	background-color: #01011b;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+	margin-left: 8vw;
+}
+
+nav ul li a {
+	text-decoration: none;
+	font-size: 200%;
+	font-weight: 500;
+	color: #fff;
+	transition: all 0.5s;
+	padding-left: 2vw;
+	padding-right: 2vw;
+}
+
+nav ul li a:hover{
+	border-radius: 100px;
+	font-weight: 500;
+	opacity: 0.6s;
+	background: #fff;
+	color: black;
+	font-size: 210%;
+	padding-left: 1.89vw;
+	padding-right: 1.89vw;
+	transition: 0.5s;
+}
+
+nav button {
+	padding: 8px 15px;
+	border: none;
+	outline: none;
+	border-radius: 100px;
+	box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3);
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+.loginIn {
+	background-color: rgb(255, 55, 54);
+}
+
+.loginIn a{
+	color: black;
+	text-decoration: none;
+}
+
+.loginIn:hover {
+	margin: 0px 5px;
+	padding: 10px;
+	opacity: 0.9;
+}
+
+.signUp {
+	background-color: rgb(255, 255, 255);
+}
+
+.signUp:hover {
+	margin: 0px 5px;
+	padding: 10px;
+	opacity: 0.9;
+}
+
+.signUp a{
+	color: black;
+	text-decoration: none;
+}
+
+img {
+	opacity: 1;
+	transition: 1s;
+}
+
+img:hover {
+	opacity: 0.70;
+	transition: 1s;
+}
+
+#ndrow {
+	margin-top: 30px;
+	display:table;
+	text-align: center;
+}
+
+.gallery{
+	border: 1px;
+	float: left;
+	width: 20vw;
+	padding: 10px;
+	margin-top: 2px;
+	margin-bottom: 30px;
+	margin-left:50px;
+	border-radius: 5px;
+}
+
+.gallery:hover {
+	padding: 8px;
+  	border: 2px solid;
+}
+
+.gallery img {
+  width: 90%;
+  height: 24vw;
+}
+
+.words {
+	margin: .5vw;
+	margin-top: 1vw;
+	text-align: center;
+	color:#222f42;
+	font-weight: bolder;
+	font-size: 16px;
+  	font-family: Garamond Bold;
+}
+
+.words button{
+	font-size: 14px;
+	padding: 8px 0px;
+	border: none;
+	outline: none;
+	border-radius: 100px;
+	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
+	transition: all 0.3s;
+	cursor: pointer;
+	width: 12vw;
+	height: 3vw;
+	color: #fff;
+	margin-bottom: 10px;
+	background-color: rgb(1, 1, 27);
+	transition: 0.5s;
+}
+
+.words button:hover{
+	animation: pulse 1.75s infinite;
+	transition: 0.5s;
+}
+
+::-webkit-scrollbar {
+	width: 15px;
+}
+
+::-webkit-scrollbar-track {
+	background: #ddd;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgb(1,1,27);
+}
+
+#footer {
+	background: #01011b;
+	padding: 10px;
+	margin-top: 2vw;
+	text-align: center;
+	color: white;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(1, 1, 27, 0.5);
+  }
+	70% {
+		-webkit-box-shadow: 0 0 0 0 rgba(1, 1, 27, 0);
+	}
+	100% {
+		-webkit-box-shadow: 0 0 0 0 rgba(1, 1, 27, 0);
+	}
+}
+
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(1, 1, 27, 0.5);
+		box-shadow: 0 0 0 0 rgba(1, 1, 27, 0.5);
+  }
+	70% {
+		-moz-box-shadow: 0 0 0 10px rgba(1, 1, 27, 0);
+		box-shadow: 0 0 0 10px rgba(1, 1, 27, 0);
+	}
+	100% {
+		-moz-box-shadow: 0 0 0 0 rgba(1, 1, 27, 0);
+		box-shadow: 0 0 0 0 rgba(1, 1, 27, 0);
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.leftcolumn, .rightcolumn {
+		width: 100%;
+		padding: 0;
+	}
+	nav ul li a {
+		font-size: 180%;
+		padding-left: 2vw;
+		padding-right: 2vw;
+		transition: all 0.5s;
+	}
+	nav ul {
+		margin-left: 2vw;
+	}
+	nav ul li a:hover{
+		font-size: 190%;
+		font-weight: 500;
+		padding-left: 1.7vw;
+		padding-right: 1.7vw;
+		transition: 0.5s;
+	}
+	.words button {
+		width: 13vw;
+		font-size: 10px;
+		height: 8vw;
+		margin-bottom: 5px;
+		padding: 5px;
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+	}
+	.words {
+		font-size: 12px;
+	}
+	#footer {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.words button {
+		width: 12vw;
+		height: 4vw;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.words button {
+		width: 13vw;
+		height: 6vw;
+		font-size: 10px;
+	}
+}

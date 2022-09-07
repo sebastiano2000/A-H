@@ -1,0 +1,197 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	overflow: hidden;
+	background-color: #fff;
+	background-size: cover;
+}
+
+nav {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	align-items: center;
+	height: 100px;
+	background-color: #01011b;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+	margin-left: 8vw;
+}
+
+nav ul li a {
+	text-decoration: none;
+	font-size: 200%;
+	font-weight: 500;
+	color: #fff;
+	transition: all 0.5s;
+	padding-left: 2vw;
+	padding-right: 2vw;
+}
+
+nav ul li a:hover{
+	border-radius: 100px;
+	font-weight: 500;
+	opacity: 0.6s;
+	background: #fff;
+	color: black;
+	font-size: 210%;
+	padding-left: 1.89vw;
+	padding-right: 1.89vw;
+	transition: 0.5s;
+}
+
+nav button, .second button{
+	padding: 8px 15px;
+	border: none;
+	outline: none;
+	border-radius: 100px;
+	box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.3);
+	transition: all 0.3s;
+	cursor: pointer;
+}
+
+.loginIn {
+	background-color: rgb(255, 55, 54);
+}
+
+.loginIn:hover {
+	margin: 0px 5px;
+	padding: 10px;
+	opacity: 0.9;
+}
+
+.signUp {
+	background-color: rgb(255, 255, 255);
+}
+
+.signUp:hover {
+	margin: 0px 5px;
+	padding: 10px;
+	opacity: 0.9;
+}
+
+.video{
+	background: #dcdae3;
+	padding: 30px;
+	margin: auto;
+	margin-top: 2vw;
+	width: 80%;
+	text-align: center;
+	border-radius: 50%;
+}
+
+.video video{
+	width: 60%;
+	padding: 10px;
+	border-radius: 15%;
+}
+
+.first{
+	color: #01011b;
+	font-size:24px;
+	padding:10px;
+}
+
+.first p{
+	margin: 3vw 0;
+	text-align: center;
+}
+
+.second {
+	text-align:center;
+	color: #01011b;
+	font-size:24px;
+	padding:10px;
+}
+
+.second img {
+	width: 50%;
+	height:320px;
+}
+
+.second img {
+	opacity: 1;
+	transition: 1s;
+}
+
+.second img:hover {
+	opacity: 0.70;
+	transition: 1.5s
+}
+
+.second ul li{
+	display: inline;
+	list-style-type: none;
+}
+
+.second p{
+		margin: 20px 0 20px 0;
+}
+
+.second ul li img {
+	width:600px;
+	height:auto;
+	border-radius:5px;
+}
+
+::-webkit-scrollbar {
+	width: 15px;
+}
+
+::-webkit-scrollbar-track {
+	background: #ddd;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgb(1,1,27);
+}
+
+#footer {
+	background: #01011b;
+	padding: 10px;
+	margin-top: 7px;
+	text-align: center;
+	color: white;
+}
+
+@media screen and (max-width: 800px) {
+	.leftcolumn, .rightcolumn {
+		width: 100%;
+		padding: 0;
+	}
+	nav ul li a {
+		font-size: 180%;
+		padding-left: 2vw;
+		padding-right: 2vw;
+		transition: all 0.5s;
+	}
+	nav ul {
+		margin-left: 2vw;
+	}
+	nav ul li a:hover{
+		font-size: 190%;
+		font-weight: 500;
+		padding-left: 1.7vw;
+		padding-right: 1.7vw;
+		transition: 0.5s;
+	}
+	.video video{
+		width: 70%;
+		padding: 10px;
+		border-radius: 15%;
+	}
+}
